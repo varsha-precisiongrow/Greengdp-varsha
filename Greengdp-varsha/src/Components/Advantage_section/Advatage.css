@@ -1,0 +1,34 @@
+.ad-cont{
+    background: linear-gradient(182deg, rgb(30 47 0) 0%, rgb(98 150 30) 116%);
+}
+.ad-cont img{
+    width: 100%;
+    height: 100%;
+}
+.adv-info1 h2{
+    color: #85ebd9;
+    font-family: "Abril Fatface", serif;
+    font-size: 38px;
+    text-decoration: underline;
+    margin-bottom: 26px;
+}
+.adv-info1 h3{
+    color:#c1a217;
+}
+.adv-info1 p{
+    color:#e9ecef;
+}
+@media(max-width:768px){
+    .adv-info1 h2{
+        font-size: 22px;}
+        .adv-info1 h3{
+            font-size: 21px;
+        }
+        .adv-info1 p {
+            font-size: 17px;
+        }
+}
+@media(max-width:600px){
+    .marquee-content h1 {
+        font-size: 8vw;}
+}

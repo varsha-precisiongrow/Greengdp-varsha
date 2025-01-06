@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Slider Container */
+.slider {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.slider .list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+/* Dark Overlay */
+.slider .list .item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1; /* Overlay behind content */
+}
+
+.slider .list .item.active {
+  opacity: 1;
+}
+
+.slider .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.slider .list .item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(46, 48, 47, 0.92), rgba(27, 25, 25, 0));
+    z-index: 2; 
+}
+
+/* Content inside the slider */
+.slider .list .item .content {
+  position: absolute;
+  top: 30%;
+  width: 92%;
+  max-width: 48%;
+  left: 28%;
+  transform: translateX(-50%);
+  color: #fff;
+  z-index: 3; /* Ensure content appears above the overlay */
+}
+
+.slider .list .item .content .title,
+.slider .list .item .content .type {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+.slider .list .item .type {
+  color: #a0e45c;
+  font-size: 6em !important;
+  text-shadow: 1px 0px 0px #abe473;
+  text-shadow: 2px 2px rgb(40, 184, 189);
+}
+
+
+.outer-button .inner-button {
+  /* Normal state styles for the inner button */
+  padding: 10px 14px;
+  letter-spacing: 3px;
+  font-weight: 400;
+ color: white;
+  margin-top: 30px;
+  border: 2px solid rgb(40, 184, 189);
+  background: linear-gradient(to right, rgba(188, 214, 37, 0.863), rgba(129, 121, 121, 0));
+}
+.outer-button .inner-button:hover {
+  /* Hover effect styles for the inner button */
+  background-color:#7cf900;
+  color: white;
+  background: linear-gradient(to right, rgba(231, 235, 9, 0.863), rgba(129, 121, 121, 0));
+}
+
+/* Arrows */
+.nextPrevArrows {
+  position: absolute;
+  top: 80%;
+  right: 44%;
+  z-index: 100;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.nextPrevArrows button {
+  width: 40px;
+  
+  top: 50%;
+  transform: translateY(100%);
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7cf900;  
+  color: white;
+  border: 2px solid rgb(40, 184, 189);
+  font-family: monospace;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(231, 235, 9, 0.863), rgba(129, 121, 121, 0));
+  box-shadow: 2px 4px 9px rgb(219, 187, 187);
+}
+
+.nextPrevArrows button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Animation */
+@keyframes slideInNext {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInPrev {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 678px) {
+  .slider .list .item .content {
+    padding-right: 0;
+  }
+  .slider .list .item .content {
+    position: absolute;
+    top: 20%;
+    font-size: 10px;
+    left: 28%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index:12; /* Ensure content appears above the overlay */
+  }
+  .slider .list .item .content .title {
+    font-size: 50px;
+  }
+}
+@media (max-width :576px){
+  .slider .list .item .content {
+    position: absolute;
+    top: 20%;
+    font-size: 10px;
+    left: 28%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index:12; /* Ensure content appears above the overlay */
+  }
+  .nextPrevArrows button {
+   margin-left: -0px!important;
+
+  }
+
+}
+@media (max-width :786px){
+  .slider .list .item .content {
+    position: absolute;
+    top: 20%;
+    font-size: 13px;
+    left: 28%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index:12; /* Ensure content appears above the overlay */
+  }
+}
+
+@media (max-width :425px){
+  .slider .list .item .content {
+    position: absolute;
+    top: 15%;
+    font-size: 8px;
+    left: 28%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index:12; /* Ensure content appears above the overlay */
+  }
+  .nextPrevArrows button {
+    transform: translateY(200%);
+  
+  }
+
+}
+

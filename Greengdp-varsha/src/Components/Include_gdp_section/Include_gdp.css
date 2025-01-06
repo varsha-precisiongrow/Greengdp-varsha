@@ -1,0 +1,37 @@
+.include-img{
+    height: 495px;
+    width: 495px;
+}
+.include-img img{
+    height:100%;
+    width:100%;
+    border-radius: 100%;
+}
+.bg111{
+    background-image: url('../../asset/ab.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.m-cont11{
+    background-color: #effbea9e;
+    padding:10px;
+}
+@media(max-width:768px){
+    .cont-order{
+        order: 2; 
+    }
+    .cont-order2{
+       order:1;
+    }
+}
+@media(max-width:600px){
+    .include-img {
+        height: 301px;
+        width: 301px;
+    }
+    ul#myTab {
+        margin-left: 0% !important;}
+        .tab-content ul {
+            width: 100%;}
+}

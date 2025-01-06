@@ -1,0 +1,101 @@
+footer .btnnn button{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-image: linear-gradient(to bottom right, #000000, #3678d5);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    margin-top:20px;
+}
+.g-logo {
+    width: 16%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer .socialLinks ul li a i {
+    display: block;
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+    background: #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 40px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px -3px black;
+}
+.socialLinks ul li a .fa-facebook-f {
+    color: #4267b2;
+}
+.socialLinks ul li a .fa-square-x-twitter {
+    color: #050505;
+}
+.socialLinks ul li a .fa-linkedin-in {
+    color: #0177b5;
+}
+.socialLinks ul li a .fa-instagram {
+    color: #dd5044;
+}
+.socialLinks ul li a .fa-youtube {
+    color: #fd1702;
+}
+.socialLinks ul li a .fa-blogger-b {
+    color: #eeb108;
+}
+.socialLinks ul li a .fa-flickr {
+    color: #e4137c;
+}
+.socialLinks ul li a .fa-soundcloud {
+    color: #f55300;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .g-logo {
+        width: 36%;}  
+}
+@media(max-width:768px){
+    footer {
+        padding: 37px 11px !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .g-logo {
+        width: 20%;}
+}
+@media(max-width:600px){
+    footer .btnnn button {
+        font-size: 9px;
+        font-weight: 500;
+        padding: 10px;
+    }
+    .g-logo {
+        width: 28%;
+    }
+    .socialLinks li {
+        margin-left: 0px;
+    }
+ 
+        footer .socialLinks{
+            flex-direction: column;
+        }
+        footer .socialLinks ul li a i {
+            
+            padding: 11px;
+            font-size: 14px;
+            margin-top: 15px;
+            height:0px;
+            width:0px;
+            line-height: 0px;
+            background-color: transparent;
+            color: white !important;
+            box-shadow: none;
+        }
+        .counter-div span {
+            font-size: 50px;
+        }
+}

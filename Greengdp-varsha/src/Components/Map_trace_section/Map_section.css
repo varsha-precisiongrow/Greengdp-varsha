@@ -1,0 +1,229 @@
+.map-wrapper{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.video-section1 {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: #4b5421;
+}
+.video-section1 video {
+    width: 100%;
+    height: 100vh;
+object-fit: cover;
+}
+.world-map {
+    position: absolute;
+    max-width: 1290px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.world-map img {
+    width: 100%;
+    height: 80%;
+    
+}
+.pin {
+    position: absolute;
+    background-color: #1d5288;
+    width: 1em!important;
+    height: 1em!important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pin::before {
+    content: '';
+    background-color: #1d5288;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 50%;
+    animation: pulsegg 1.3s ease-in-out infinite;
+}
+ .pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 0.3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+}
+.hover-content {
+    position: absolute;
+    display: none;
+    width: 264px;
+    height: auto;
+    background-color: rgba(29, 82, 136, 0.8);
+    color: white;
+    text-align: start;
+    border-radius: 5px;
+    padding: 1px;
+}
+.hover-content span{
+    color:rgb(245, 126, 15);
+    font-size:30px;
+    font-weight: bold;
+font-family: "Abril Fatface", serif;
+}
+.pin:hover + .hover-content {
+    display: block;
+}      
+.usa {
+    top: 56%;
+    left: 21%;
+}
+.usa-hover{
+    top: 50%;
+    left: 21%;
+}
+.france {
+    top: 51%;
+    left: 48%;
+}
+.france-hover{
+    top: 45%;
+    left: 48%;
+}
+.sweden {
+    top: 40.7%;
+    left: 51.2%;
+}
+.Sweden-hover{
+    top: 33%;
+    left: 52%;
+}
+.south-africa {
+    top: 80%;
+    left: 53%;
+}
+.Africa-hover{
+    top: 78%;
+    left: 53%;
+}
+.brazil {
+    top: 74%;
+    left: 32%;
+}
+.Brazil-hover{
+    top: 71%;
+    left: 32%;
+}
+.china {
+    top: 57%;
+    left: 74%;
+}
+.China-hover{
+    top: 52%;
+    left: 74%;
+}
+.australia {
+    top: 79%;
+    left: 82%;
+}
+.Australia-hover{
+    top: 76%;
+    left: 82%;
+}
+.india {
+    top: 64%;
+    left: 67%;
+}
+.India-hover{
+    top: 60%;
+    left: 67%;
+}
+@keyframes pulsegg {
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(5.5);
+    }
+}
+.marquee-content span {
+    color: orange !important;
+}
+.marquee-content h1 {
+    color: #93ad11;
+    font-size: 4vw;
+    font-family: "Abril Fatface", serif;
+    font-weight: bold;
+    padding-top: 4%;
+}
+@media(max-width:768px){
+    .pin {
+        position: absolute;
+        background-color: #1d5288;
+        width: .7em !important;
+        height: .7em !important;}
+        .Australia-hover {
+            top: 53%;
+            left: 36%;
+        }
+      
+        .China-hover {
+            top: 61%;
+            left: 61%;
+        }
+        .India-hover {
+            top: 68%;
+            left: 58%;
+        }
+}
+@media(max-width:600px){
+    .Africa-hover, .france-hover, .usa-hover, .Sweden-hover, .south-africa, .Brazil-hover, .China-hover, .Australia-hover, .India-hover {
+        top: 63%;
+        left: 0%;
+    }
+    .hover-content {
+        width: 318px;
+        padding: 0px 16px;
+    }
+    .hover-content p{
+        font-size: 12px;
+    }
+    .south-africa{
+        top: 78%;
+        left: 52%;
+    }
+    .hover-content span {
+        font-size: 18px;
+    }
+}
+@media(max-width:425){
+    .world-map {
+        position: absolute;
+       width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .world-map img {
+        width: 100%;
+        height: 100%;
+       
+    }
+    .marquee-content span {
+        color: rgb(35, 189, 163) !important;
+    }
+    .marquee-content h1 {
+        color: #0a9b77;
+        font-size: 8vw;
+        font-family: "Abril Fatface", serif;
+        font-weight: bold;
+        padding-top: 4%;
+    }
+}

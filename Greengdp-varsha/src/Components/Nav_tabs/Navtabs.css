@@ -1,0 +1,58 @@
+ul#myTab {
+    margin-left: 10% !important;
+    border:0;
+    margin-bottom:30px;
+}
+.nav-tabs .nav-link.active {
+    background-color: #248000;
+    color: white;
+}
+.nav-tabs .nav-link {
+    background-color: #c7e4a2;
+    width: 381px;
+    border: 1px solid green;
+    color: #348000;
+    font-weight: bold;
+}
+.navv-bg{
+    background-image: url('../../asset/leaf.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navv-bg ul li{
+    margin-bottom: 10px;
+}
+.inner-nav{
+    background-color: #f0fbeaa1;
+    color:#427504;
+}
+.gt {
+    font-size: 20px !important;
+    text-decoration: underline;
+}
+.tab-content ul{
+    width:80%;
+    margin:auto
+}
+  @media(max-width:768px){
+    .nav-tabs .nav-link {
+        width: 309px;
+    }    
+  }
+@media(max-width:600px){
+    ul#myTab {
+      margin-left: 0%!important;}
+      .nav-tabs .nav-link {
+        width: 144px;}
+  }
+  /* .logo {
+    width: 380px;
+    height: 150px;
+}
+.logo img{
+    height:100%;
+    width:100%;
+}*/
+.header{
+   box-shadow: 10px 10px 10px black;
+} 

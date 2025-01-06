@@ -1,0 +1,25 @@
+.eco-div{
+    background-color: #edf9e5;
+}
+.eco-div img{
+    border-radius: 143px 0px 143px 0px;
+    border: 8px solid #379320;
+}
+.eco-div h1{
+    font-size:60px;
+    font-family: "Abril Fatface", serif;
+    font-style: italic;
+    color:#074e07
+}
+.eco-div span{
+    font-size: 20px;
+    color:#074e07;
+    text-decoration: underline;
+}
+@media(max-width:600px){
+    .eco-div h1 {
+        font-size: 46px;}
+        .eco-div img{
+            margin-bottom: 20px;
+        }
+}
