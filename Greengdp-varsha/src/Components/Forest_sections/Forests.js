@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Forests.css";
 import CountUp from "react-countup";
 
-import videoBg1 from "../../asset/vdo1.mp4";
+import ForestV from "../../asset/vdo1.mp4";
 
 const Forests = () => {
   const [counterStart, setCounterStart] = useState(0);
@@ -22,9 +22,9 @@ const Forests = () => {
 
   return (
     <div className="video-background">
-      <video src={videoBg1} autoPlay loop muted />
-      <div className="dark-overlay"></div>
-      <div className=" container-fluid ">
+     <video  src={ForestV} autoPlay loop muted />
+      <div className=" tt">
+     
         <h1 style={{ textAlign: "center" }}>
             
           <div className="counter-div">
@@ -57,6 +57,7 @@ const Forests = () => {
         </h1>
       </div>
     </div>
+   
   );
 };
 

@@ -1,45 +1,43 @@
-
-  .video-background {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-size: cover;;
+.video-background {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  /* width: 100vw; */
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
   }
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .dark-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  }
-  
-  .counter-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 48px; /* Adjust font size as needed */
-    z-index: 10; /* Ensure counter-div is above the video */
-    width:80%;
-  }
-.para {
-    color: black;
-    font-size: 17px;
-    text-align: start;
-    color:rgb(157, 192, 86);
-
 }
-.counter-div span{
-font-size: 70px;
+
+.tt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  object-fit: cover;
+}
+
+.counter-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px; /* Adjust font size as needed */
+  z-index: 10; /* Ensure counter-div is above the video */
+  width: 80%;
+}
+.para {
+  color: black;
+  font-size: 17px;
+  text-align: start;
+  color: rgb(167, 250, 1);
+}
+.counter-div span {
+  font-size: 80px;
 }
 .counter-div h2 {
   color: #05f205;
@@ -47,29 +45,28 @@ font-size: 70px;
   font-weight: bolder;
   font-size: 1.3em;
 }
-.counter-div h1{
-    font-family: "Playfair Display", serif;
-    font-style: italic;
+.counter-div h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
-.counter-div .col-md-3{
-    border:5px solid #62a103;
-    background-color: #09985480;
-    transition: transform 0.3s ease;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.counter-div .col-md-3 {
+  border: 5px solid #62a103;
+  background-color: #09985480;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
-.counter-div .col-md-3:hover{
-    border:5px solid rgb(6, 245, 6);
-    transform: scale(1.1);
-    background-color: #ffff0061;
+.counter-div .col-md-3:hover {
+  border: 5px solid rgb(6, 245, 6);
+  transform: scale(1.1);
+  background-color: #ffff0061;
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .counter-div {
-    width:100%;
-    padding:30px; 
+    width: 100%;
+    padding: 30px;
   }
   .counter-div h2 {
     font-size: 36px;
   }
 }
-  
